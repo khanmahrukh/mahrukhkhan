@@ -45,19 +45,47 @@
             padding: 10px;
             display: inline-block;
          }
+         nav ul li:hover
+    {
+        background-color:gold;
+        cursor: pointer;
+    }
+    .left:hover
+    {
+        border-radius:20px 0  0 20px;
+    }
+    .right:hover
+    {
+        border-radius:0 20px 20px 0;
+    }
          
            
-         article{
-                 float: left;
-                 padding: 10px;
-                 width: 100%;
-                 background-color: #f1f1f1;
-                 height: 200px;
+        
+                header:after
+        {
+            content: "";
+            display: table;
+            clear: both;
+        }
+                .bodysection
+                {
+
                 }
+                .data
+        {
+            background-color: lightgray;
+            width: 70%;
+            display: inline-block;
+
+
+        }
+
                  .column {
   float: left;
   width: 20.33%;
   padding: 10px;
+  text-align: center;
+padding: 10px;
 }
 
 /* Clear floats after image containers */
@@ -92,8 +120,8 @@
                         </ul>
                     </div> 
                     <hr>
-                    <footer>
-                    <nav >
+                    
+                    <div class="data">
                         <div class="row">
                             <div class="column">
                               <img src="images1.jpg" alt="images1" style="width:60%">
@@ -105,6 +133,7 @@
                               <img src="images3.jpg" alt="images3" style="width:60%">
                             </div>
                           </div>
+                        </div>
                           </nav>
                         </footer>
 
