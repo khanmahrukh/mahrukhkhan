@@ -38,13 +38,35 @@
                 text-align: center;
                 display:block;
                 font-size: 20px;
-
+              
          }
          nav ul li{
             list-style: none;
             padding: 10px;
             display: inline-block;
          }
+         
+           
+         article{
+                 float: left;
+                 padding: 10px;
+                 width: 100%;
+                 background-color: #f1f1f1;
+                 height: 100px;}
+                 .column {
+  float: left;
+  width: 20.33%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+                 
         
         </style>
     </head>
@@ -52,7 +74,7 @@
         <header>
             
                <div>
-                        <img class="picture"src="smilie.jpg" style="width: 150px; height:170px"> 
+                        <img class="picture"src="smilie.jpg" style="width: 150px; height:150px"> 
                     </div>
                         <div class="first">
                            
@@ -68,10 +90,22 @@
                         </nav>
                         </ul>
                     </div>
-                    <div>
-                        <img src="images1.jpg" style="width: 90px; height:150px">
-                    </div>
-                    
+                    <article>
+                    <nav >
+                        <div class="row">
+                            <div class="column">
+                              <img src="images1.jpg" alt="images1" style="width:60%">
+                            </div>
+                            <div class="column">
+                              <img src="images2.jpg" alt="images2" style="width:60%">
+                            </div>
+                            <div class="column">
+                              <img src="images3.jpg" alt="images3" style="width:60%">
+                            </div>
+                          </div>
+                          </nav>
+                </article>
+               
                                       
             </header>
     </body>
