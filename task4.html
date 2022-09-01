@@ -1,75 +1,57 @@
 <html>
-    <head>
-      
-        <style>
-             
-             header{
-             
-             background-color: #666;
-             padding: 20px;
-             font-size: 35px;
-             color:black;
-         }
-       .picture
-         {
-            float: left;
-             
 
-         }
-         .first{
-            display:block;
-            text-align: center;
-            background-color: #f1f1f1;
-            font-size: 30px;
-            
-         }
-         .second{
-            display: block;
-            text-align: center;
-           font-size: 20px;
-           background-color: #ccc;
-            
+<head>
 
+    <style>
+        img {
+            width: 10vw;
+        }
 
-         }
-         nav{
-
-                background-color:#ccc;
-                text-align: center;
-                display:block;
-                font-size: 20px;
-
-         }
-         nav ul li{
+        header {
+            display: flex;
+            background-color: rgb(199, 192, 192);
+            padding: 20px;
+        }
+        .myName{
+            background-color: antiquewhite;
+        }
+        nav ul li{
             list-style: none;
-            padding: 10px;
+            padding: 20px;
+        }
+        nav ul{
+            display: flex;
+        }
+        .nav_bar{
+            background-color: beige;
+        }
+        nav{
             display: inline-block;
-         }
-        
-        </style>
-    </head>
-    <body>
-        <header>
-            
-               <div>
-                        <img class="picture"src="smilie.jpg" style="width: 150px; height:170px"> 
-                    </div>
-                        <div class="first">
-                           
-                      <h2> Web designing</h2>  
-                    
-                    </div>
-                    <div>
-                        <nav>
-                        <ul class="second">
-                            <li>home</li>
-                            <li>About</li>
-                            <Li>Contact</Li>
-                        </nav>
-                        </ul>
-                    </div>
-                    
-                                      
-            </header>
-    </body>
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="image">
+            <img src="smilie.jpg" alt="Smile Icon">
+        </div>
+
+     <div class="headerTwo">
+        <div class="myName">
+            <h2>my name is xyz</h2>
+        </div>
+        <div class="nav_bar">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+     </div>
+    </header>
+</body>
+
 </html>
