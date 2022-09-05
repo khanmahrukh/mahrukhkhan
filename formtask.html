@@ -1,112 +1,153 @@
 <html>
-    <head>
-        <meta charset="utf=8">
-        <meta name="viewport" content="width =device width, initial-scale=1">
-       <style>
-form{
-    background-color: antiquewhite;
-    border-radius: 20px;
-}
-        
-        
-        .form{
-          
-            text-align: center;
-            width:100%;
-            height: 100%;
-            display:flex;
-            justify-content: center;
-           
-           
+
+<head>
+    <meta charset="utf=8">
+    <meta name="viewport" content="width =device width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+        integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        form {
+            background-color: antiquewhite;
+            border-radius: 20px;
         }
-        .heading1{
+
+
+        .form {
+
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .heading1 {
             font-size: 30px;
             font-style: italic;
-            color:blue;
+            color: blue;
             text-align: center;
-           font-family: sans-serif;
+            font-family: sans-serif;
         }
-        .heading2{
+
+        .heading2 {
             font-size: 20px;
             font-style: italic;
-            color:black;
-            font-weight: 50px;
+            color: black;
+          
             text-align: center;
-            
+
         }
-        .formstyle{
+
+        .formstyle {
             font-size: 20px;
             font-style: italic;
-            color:black;
+            color: black;
             border-radius: 2px;
             size: 15;
             text-align: center;
-            
+
 
         }
-       
-       </style> 
-    </head>
-    <body>
-        <div class="form">
-            <form >
-                <h1 class="heading1"><u>Registration Form</u>  </h1><br>
-                <label class="heading2"> <b>First Name:</b></label>
-                <img src="user1.png" style=" width: 20px; height: 25p">
-                <input  class="formstyle" type="text" name=" First Name:"><br>
-                
-                <br>
-                <label class="heading2"><b>Last Name:</b></label>
-                <img src="user1.png" style=" width: 20px; height: 25p">
-                <input  class="formstyle" type="text" name="Last Name:"><br>
-                <br>
-                <label class="heading2"><b>Mobile Number:</b></label>
-                <img src="mobile.png" style=" width: 20px; height: 25p">
-                <input class="formstyle" type="mobile number"name="Mobile Number:"><br>
-                <br>
-                <label class="heading2"><b>Email:</b></label>
-                <img src="email.png" style=" width: 20px; height: 25p">
-                <input class="formstyle" type="emil" name="Email:"><br>
-                <br>
-                <label class="heading2"><b>Address:</b></label>
-                <img src="address.png" style=" width: 20px; height: 25p"><br>
-               <textarea cols="40" rows="4" name="address"></textarea>
-                <br>
-                <br>
-                <label class="heading2"><b>Date of Birth:</b></label>
-                <img src="dateofbirth.png" style=" width: 20px; height: 25p">
-                <input  class="formstyle" type="date" name="Date:"><br>
-                <br>
-                <label class="heading2"><b>Date:</b></label>
-                <img src="date.png" style=" width: 20px; height: 25p">
-                <input  class="formstyle" type="date" name="Date of Birth:"><br>
-                <br>
-                <label class="heading2"> <b><b>Course:</b></b></label>
-                <img src="course.png" style=" width: 20px; height: 25p">
-                <select>
+        .form-input{
+            position: relative;
+            display: flex;
+
+        }
+        .icon{
+            position: absolute;
+            left: 105px;
+            display: flex;
+            top: 5px;
+
+        }
+        .icon1{
+            position: absolute;
+            left: 145px;
+            display: flex;
+            top: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form>
+            <h1 class="heading1"><u>Registration Form</u> </h1><br>
+            
+           
+          <div class="form-input">
+            <label class="heading2"> <b>First Name:</b></label>
+            <span class="icon"> <img src="user1.png" style=" width: 20px; height: 25p"></span>
+           
+            <input class="formstyle" type="text" name=" First Name:"><br>
+          </div>
+
+            <br>
+            <div class="form-input">
+            <label class="heading2"><b>Last Name:</b></label>
+           <span class="icon"> <img src="user1.png" style=" width: 20px; height: 25p"></span>
+            <input class="formstyle" type="text" name="Last Name:"><br>
+        </div>
+            <br>
+           <div class="form-input">
+            <label class="heading2"><b>Mobile Number:</b></label>
+            <span  class="icon1">
+            <img src="mobile.png" style=" width: 20px; height: 25p"></span>
+
+            <input class="formstyle" type="mobile number" name="Mobile Number:"><br>
+        </div>
+            <br>
+            <label class="heading2"><b>Email:</b></label>
+            <img src="email.png" style=" width: 20px; height: 25p">
+            <input class="formstyle" type="emil" name="Email:"><br>
+            <br>
+            <label class="heading2"><b>Address:</b></label>
+            <img src="address.png" style=" width: 20px; height: 25p"><br>
+            <textarea cols="40" rows="4" name="address"></textarea>
+            <br>
+            <br>
+            <label class="heading2"><b>Date of Birth:</b></label>
+            <img src="dateofbirth.png" style=" width: 20px; height: 25p">
+            <input class="formstyle" type="date" name="Date:"><br>
+            <br>
+            <label class="heading2"><b>Date:</b></label>
+            <img src="date.png" style=" width: 20px; height: 25p">
+            <input class="formstyle" type="date" name="Date of Birth:"><br>
+            <br>
+            <label class="heading2"> <b>Course:</b></label>
+            <img src="course.png" style=" width: 20px; height: 25p">
+            <select>
                 <option value="Course">Course</option>
                 <option value="BS(CS)">BS(CS)</option>
                 <option value="BS(SE)">BS(SE)</option>
-                <option value="B.Tec">B.Tec</option>  
-                   <option value="MBA">MBA</option>
-                   <option value="MCA">BBA</option>
+                <option value="B.Tec">B.Tec</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">BBA</option>
             </select>
             <br>
             <br>
             <label class="heading2"><b>Gender :</b></label>
             <img src="gender.png" style=" width: 20px; height: 25p"><br>
-            <input type="radio" name="male"/> Male<br>
-            <input type="radio" name="Female"/> female<br>
+            <input type="radio" name="male" /> Male<br>
+            <input type="radio" name="Female" /> female<br>
             <label class="heading2"><b>Choose your interest :</b></label><br>
             <br>
-        
-                <input class="formstyle" type="radio"name="Sports">Sports</option>
-                <input class="formstyle" type="radio"name="Books">Books</option>
-                <input class="formstyle" type="radio"name="Computer">Computer</option>
-                <input class="formstyle" type="radio"name="Coding">Coding</option> 
-          
-               
-            </form>
-        </div>
-    </body>
+
+            <input class="formstyle" type="radio" name="Sports">Sports</option>
+            <input class="formstyle" type="radio" name="Books">Books</option>
+            <input class="formstyle" type="radio" name="Computer">Computer</option>
+            <input class="formstyle" type="radio" name="Coding">Coding</option>
+
+
+        </form>
+    </div>
+</body>
+
 </html>
